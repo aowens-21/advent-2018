@@ -1,2 +1,2 @@
 # advent-2018
-Advent of Code 2018 puzzle solutions
+Solving the puzzles from https://adventofcode.com/2018
