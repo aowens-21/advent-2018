@@ -48,6 +48,8 @@ string get_common_characters_from_correct_ids(string in_file_name)
 	while (getline(box_ids_file, line))
 		ids.push_back(line);
 	
+	box_ids_file.close();
+
 	// once the list is sorted, we know that the two correct ids will be adjacent
 	sort(ids.begin(), ids.end());
 
@@ -103,6 +105,8 @@ int get_checksum(string in_file_name)
 		found_two = false;
 		found_three = false;	
 	}
+
+	box_ids_file.close();
 
 	return num_found_two * num_found_three;
 }
